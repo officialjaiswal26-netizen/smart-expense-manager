@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Smart Expense Manager and Personal Finance Coach built by Priyanka Jaiswal."
+    >
+
+    <title>Smart Expense Manager | Priyanka Jaiswal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         SIDEBAR OVERLAY
+    ========================== -->
+
+    <div
+        id="sidebarOverlay"
+        class="sidebar-overlay"
+    ></div>
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside
+        id="sidebar"
+        class="sidebar"
+        aria-label="Priyanka profile sidebar"
+    >
+
+        <div class="sidebar-top">
+
+            <button
+                id="sidebarClose"
+                class="sidebar-close"
+                type="button"
+                aria-label="Close sidebar"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- PROFILE -->
+
+        <div class="profile">
+
+            <div class="profile-photo-wrapper">
+
+                <img
+                    src="profile.png"
+                    alt="Priyanka Jaiswal"
+                    class="profile-photo"
+                >
+
+            </div>
+
+
+            <h2>
+                Priyanka Jaiswal
+            </h2>
+
+
+            <p class="profile-role">
+                B.Tech CSE | 4th Year
+            </p>
+
+
+            <p class="profile-location">
+                KIIT, Bhubaneswar
+            </p>
+
+
+            <div class="profile-badge">
+                Computer Science & Engineering
+            </div>
+
+        </div>
+
+
+        <!-- ABOUT -->
+
+        <div class="sidebar-section">
+
+            <p class="sidebar-title">
+                ABOUT ME
+            </p>
+
+
+            <p class="sidebar-text">
+
+                I am a Computer Science and Engineering undergraduate
+                interested in software development, frontend development,
+                SQL, problem solving and learning new technologies.
+
+            </p>
+
+        </div>
+
+
+        <!-- PERSONAL -->
+
+        <div class="sidebar-section">
+
+            <p class="sidebar-title">
+                PROFILE
+            </p>
+
+
+            <div class="info-item">
+
+                <span>
+                    <strong>Name:</strong>
+                    Priyanka Jaiswal
+                </span>
+
+
+                <span>
+                    <strong>Age:</strong>
+                    22
+                </span>
+
+
+                <span>
+                    <strong>Degree:</strong>
+                    B.Tech CSE
+                </span>
+
+
+                <span>
+                    <strong>Year:</strong>
+                    4th Year
+                </span>
+
+
+                <span>
+                    <strong>College:</strong>
+                    KIIT, Bhubaneswar
+                </span>
+
+
+                <span>
+                    <strong>Graduation:</strong>
+                    2027
+                </span>
+
+
+                <span>
+                    <strong>CGPA:</strong>
+                    7.56
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- SKILLS -->
+
+        <div class="sidebar-section">
+
+            <p class="sidebar-title">
+                SKILLS
+            </p>
+
+
+            <div class="skill-list">
+
+                <span>C</span>
+
+                <span>Java</span>
+
+                <span>HTML</span>
+
+                <span>CSS</span>
+
+                <span>JavaScript</span>
+
+                <span>SQL</span>
+
+                <span>DSA</span>
+
+                <span>Problem Solving</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- LEADERSHIP -->
+
+        <div class="sidebar-section">
+
+            <p class="sidebar-title">
+                ACTIVITIES
+            </p>
+
+
+            <div class="activity-list">
+
+                <p>
+                    • PR & Outreach — IEEE
+                </p>
+
+
+                <p>
+                    • Administration Team — GeeksforGeeks Chapter
+                </p>
+
+
+                <p>
+                    • NSS Volunteer
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div class="sidebar-section">
+
+            <p class="sidebar-title">
+                CONTACT
+            </p>
+
+
+            <a
+                class="sidebar-link"
+                href="mailto:Officialjaiswal26@gmail.com"
+            >
+                ✉ Officialjaiswal26@gmail.com
+            </a>
+
+
+            <p class="sidebar-note">
+                GitHub and LinkedIn links can be added later.
+            </p>
+
+        </div>
+
+
+        <div class="sidebar-footer">
+
+            <button
+                id="sidebarCloseBottom"
+                class="sidebar-footer-button"
+                type="button"
+            >
+                ← Close Profile
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         APPLICATION
+    ========================== -->
+
+    <div
+        id="app"
+        class="app"
+    >
+
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div class="topbar-left">
+
+                <button
+                    id="sidebarOpen"
+                    class="menu-button"
+                    type="button"
+                    aria-label="Open profile"
+                >
+                    ☰
+                </button>
+
+
+                <div class="brand">
+
+                    <div class="brand-icon">
+                        ₹
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Smart Expense Manager
+                        </strong>
+
+                        <span>
+                            Personal Finance Coach
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="exportButton"
+                class="secondary-button"
+                type="button"
+            >
+                Export CSV
+            </button>
+
+        </header>
+
+
+        <!-- MAIN -->
+
+        <main class="main-content">
+
+
+            <!-- HERO -->
+
+            <section
+                id="dashboard"
+                class="hero"
+            >
+
+                <div>
+
+                    <p class="eyebrow">
+                        PERSONAL FINANCE
+                    </p>
+
+
+                    <h1>
+                        Track your money.<br>
+                        Understand your habits.
+                    </h1>
+
+
+                    <p class="subtitle">
+
+                        A smart dashboard to manage income,
+                        expenses, savings behaviour and spending patterns.
+
+                    </p>
+
+                </div>
+
+
+                <div class="hero-actions">
+
+                    <button
+                        id="clearAllButton"
+                        class="danger-button"
+                        type="button"
+                    >
+                        Clear All Data
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- SUMMARY -->
+
+            <section
+                class="summary"
+                aria-label="Financial summary"
+            >
+
+                <article class="card">
+
+                    <span class="card-label">
+                        Total Income
+                    </span>
+
+
+                    <strong id="totalIncome">
+                        ₹0
+                    </strong>
+
+
+                    <small class="card-caption">
+                        Money received
+                    </small>
+
+                </article>
+
+
+                <article class="card">
+
+                    <span class="card-label">
+                        Total Expense
+                    </span>
+
+
+                    <strong id="totalExpense">
+                        ₹0
+                    </strong>
+
+
+                    <small class="card-caption">
+                        Money spent
+                    </small>
+
+                </article>
+
+
+                <article class="card">
+
+                    <span class="card-label">
+                        Current Balance
+                    </span>
+
+
+                    <strong id="balance">
+                        ₹0
+                    </strong>
+
+
+                    <small class="card-caption">
+                        Income minus expenses
+                    </small>
+
+                </article>
+
+            </section>
+
+
+            <!-- MONEY HEALTH -->
+
+            <section class="health-grid">
+
+
+                <article class="panel health-card">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            MONEY HEALTH
+                        </p>
+
+
+                        <h2>
+                            Financial Health Score
+                        </h2>
+
+
+                        <p
+                            id="healthMessage"
+                            class="muted"
+                        >
+                            Add transactions to calculate your score.
+                        </p>
+
+                    </div>
+
+
+                    <div class="score-circle">
+
+                        <strong id="healthScore">
+                            0
+                        </strong>
+
+
+                        <span>
+                            / 100
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="panel">
+
+                    <p class="eyebrow">
+                        SAVINGS
+                    </p>
+
+
+                    <h2>
+                        Savings Rate
+                    </h2>
+
+
+                    <div class="metric-value">
+
+                        <span id="savingsRate">
+                            0%
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-progress">
+
+                        <div
+                            id="savingsProgress"
+                            class="mini-progress-fill"
+                        ></div>
+
+                    </div>
+
+
+                    <p class="muted">
+                        Income left after recorded expenses.
+                    </p>
+
+                </article>
+
+
+                <article class="panel">
+
+                    <p class="eyebrow">
+                        SPENDING CONTROL
+                    </p>
+
+
+                    <h2>
+                        Daily Safe Spend
+                    </h2>
+
+
+                    <div class="metric-value">
+
+                        <span id="dailySafeSpend">
+                            ₹0
+                        </span>
+
+                    </div>
+
+
+                    <p class="muted">
+                        Indicative amount based on available balance.
+                    </p>
+
+                </article>
+
+            </section>
+
+
+            <!-- TRANSACTION FORM -->
+
+            <section
+                id="transactions"
+                class="panel"
+            >
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            TRANSACTION
+                        </p>
+
+
+                        <h2>
+                            Add or Update Transaction
+                        </h2>
+
+                    </div>
+
+
+                    <span
+                        id="formMode"
+                        class="status-pill"
+                    >
+                        Adding
+                    </span>
+
+                </div>
+
+
+                <form
+                    id="transactionForm"
+                    class="expense-form"
+                >
+
+
+                    <div class="field">
+
+                        <label for="description">
+                            Description
+                        </label>
+
+
+                        <input
+                            type="text"
+                            id="description"
+                            placeholder="e.g. Grocery shopping"
+                            maxlength="80"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="amount">
+                            Amount
+                        </label>
+
+
+                        <input
+                            type="number"
+                            id="amount"
+                            placeholder="e.g. 500"
+                            min="0.01"
+                            step="0.01"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="type">
+                            Type
+                        </label>
+
+
+                        <select id="type">
+
+                            <option value="income">
+                                Income
+                            </option>
+
+
+                            <option value="expense">
+                                Expense
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="category">
+                            Category
+                        </label>
+
+
+                        <select id="category">
+
+                            <option value="Food">
+                                Food
+                            </option>
+
+
+                            <option value="Travel">
+                                Travel
+                            </option>
+
+
+                            <option value="Shopping">
+                                Shopping
+                            </option>
+
+
+                            <option value="Bills">
+                                Bills
+                            </option>
+
+
+                            <option value="Education">
+                                Education
+                            </option>
+
+
+                            <option value="Health">
+                                Health
+                            </option>
+
+
+                            <option value="Entertainment">
+                                Entertainment
+                            </option>
+
+
+                            <option value="Salary">
+                                Salary
+                            </option>
+
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="date">
+                            Date
+                        </label>
+
+
+                        <input
+                            type="date"
+                            id="date"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-actions">
+
+                        <button
+                            id="submitButton"
+                            class="primary-button"
+                            type="submit"
+                        >
+                            Add Transaction
+                        </button>
+
+
+                        <button
+                            id="cancelEditButton"
+                            class="secondary-button hidden"
+                            type="button"
+                        >
+                            Cancel Edit
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+
+            <!-- SMART INSIGHT -->
+
+            <section
+                id="insights"
+                class="panel insight-panel"
+            >
+
+                <div>
+
+                    <p class="eyebrow">
+                        SMART INSIGHT
+                    </p>
+
+
+                    <h2>
+                        Your Money Coach
+                    </h2>
+
+                </div>
+
+
+                <div
+                    id="smartInsight"
+                    class="insight-box"
+                >
+                    Add a few transactions and your spending pattern will be analyzed here.
+                </div>
+
+            </section>
+
+
+            <!-- TRANSACTION HISTORY -->
+
+            <section class="panel">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            HISTORY
+                        </p>
+
+
+                        <h2>
+                            Transactions
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="filters">
+
+
+                    <div class="field grow">
+
+                        <label for="searchInput">
+                            Search
+                        </label>
+
+
+                        <input
+                            type="search"
+                            id="searchInput"
+                            placeholder="Search description..."
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="filterType">
+                            Type
+                        </label>
+
+
+                        <select id="filterType">
+
+                            <option value="all">
+                                All
+                            </option>
+
+
+                            <option value="income">
+                                Income
+                            </option>
+
+
+                            <option value="expense">
+                                Expense
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="filterCategory">
+                            Category
+                        </label>
+
+
+                        <select id="filterCategory">
+
+                            <option value="all">
+                                All Categories
+                            </option>
+
+
+                            <option value="Food">
+                                Food
+                            </option>
+
+
+                            <option value="Travel">
+                                Travel
+                            </option>
+
+
+                            <option value="Shopping">
+                                Shopping
+                            </option>
+
+
+                            <option value="Bills">
+                                Bills
+                            </option>
+
+
+                            <option value="Education">
+                                Education
+                            </option>
+
+
+                            <option value="Health">
+                                Health
+                            </option>
+
+
+                            <option value="Entertainment">
+                                Entertainment
+                            </option>
+
+
+                            <option value="Salary">
+                                Salary
+                            </option>
+
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="filterMonth">
+                            Month
+                        </label>
+
+
+                        <input
+                            type="month"
+                            id="filterMonth"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="transactionList"
+                    class="transaction-list"
+                ></div>
+
+            </section>
+
+
+            <!-- ANALYTICS -->
+
+            <section
+                id="analytics"
+                class="analytics-grid"
+            >
+
+
+                <article class="panel">
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <p class="eyebrow">
+                                ANALYTICS
+                            </p>
+
+
+                            <h2>
+                                Spending Overview
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="analytics-summary">
+
+
+                        <div class="analytics-card">
+
+                            <span class="card-label">
+                                Total Transactions
+                            </span>
+
+
+                            <strong id="totalTransactions">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="analytics-card">
+
+                            <span class="card-label">
+                                Highest Spending
+                            </span>
+
+
+                            <strong id="highestCategory">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="analytics-card">
+
+                            <span class="card-label">
+                                Average Expense
+                            </span>
+
+
+                            <strong id="averageExpense">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="analytics-card">
+
+                            <span class="card-label">
+                                No-Spend Days
+                            </span>
+
+
+                            <strong id="noSpendDays">
+                                0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <h3>
+                        Category-wise Expenses
+                    </h3>
+
+
+                    <div
+                        id="categoryChart"
+                        class="category-chart"
+                    ></div>
+
+                </article>
+
+
+                <article class="panel">
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <p class="eyebrow">
+                                MONTHLY
+                            </p>
+
+
+                            <h2>
+                                Monthly Pattern
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="monthlyChart"
+                        class="monthly-chart"
+                    ></div>
+
+                </article>
+
+            </section>
+
+
+            <!-- CREATOR -->
+
+            <section
+                id="about"
+                class="panel creator-panel"
+            >
+
+                <div class="creator-photo-wrapper">
+
+                    <img
+                        src="profile.png"
+                        alt="Priyanka Jaiswal"
+                        class="creator-photo"
+                    >
+
+                </div>
+
+
+                <div class="creator-content">
+
+                    <p class="eyebrow">
+                        BUILT BY
+                    </p>
+
+
+                    <h2>
+                        Priyanka Jaiswal
+                    </h2>
+
+
+                    <p class="muted">
+
+                        22-year-old B.Tech Computer Science and Engineering
+                        student at KIIT, Bhubaneswar. Interested in software
+                        development, frontend technologies, SQL, DSA and problem solving.
+
+                    </p>
+
+
+                    <div class="creator-tags">
+
+                        <span>C</span>
+
+                        <span>Java</span>
+
+                        <span>HTML</span>
+
+                        <span>CSS</span>
+
+                        <span>JavaScript</span>
+
+                        <span>SQL</span>
+
+                        <span>DSA</span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- FOOTER -->
+
+            <footer class="footer">
+
+                <p>
+                    Smart Expense Manager • Built by Priyanka Jaiswal
+                </p>
+
+
+                <p>
+                    B.Tech CSE • KIIT • Expected Graduation 2027
+                </p>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
