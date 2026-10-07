@@ -1,56 +1,76 @@
-# Smart Expense Manager
+# 💰 Smart Expense Manager
 
-A personal finance dashboard that helps users track income,
-expenses, savings behaviour and spending patterns.
+A personal finance dashboard designed to help users track their income,
+manage expenses, understand spending patterns, and monitor their financial habits.
 
-## Features
+> Built by **Priyanka Jaiswal**, B.Tech Computer Science & Engineering student at KIIT, Bhubaneswar.
 
+---
+
+## ✨ Features
+
+### 💵 Transaction Management
 - Add income and expenses
-- Edit and delete transactions
-- Search and filter transactions
-- Category-wise expense analytics
-- Monthly spending analysis
-- Financial Health Score
+- Edit existing transactions
+- Delete transactions
+- Record transaction date
+- Categorize transactions
+
+### 🔎 Search & Filters
+- Search transactions by description
+- Filter by income or expense
+- Filter by category
+- Filter transactions by month
+
+### 📊 Financial Dashboard
+- Total Income
+- Total Expense
+- Current Balance
 - Savings Rate
 - Daily Safe Spend
-- Smart spending insights
-- No-Spend Days tracking
-- Export transactions as CSV
-- LocalStorage data persistence
-- Responsive design
-- Collapsible creator profile sidebar
 
-## Technologies Used
+### 🧠 Smart Money Insights
+- Financial Health Score
+- Highest spending category
+- Average expense
+- No-spend days
+- Spending behaviour insights
+
+### 📈 Analytics
+- Category-wise expense analysis
+- Monthly spending pattern
+- Income vs expense overview
+
+### 📥 Data Management
+- Data persistence using LocalStorage
+- Export transactions as CSV
+- Clear all saved data
+
+### 📱 Responsive Design
+- Desktop friendly
+- Tablet friendly
+- Mobile responsive
+- Collapsible personal profile sidebar
+
+---
+
+## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
-- LocalStorage
+- Browser LocalStorage
+- CSV export using JavaScript
 
-## About the Developer
+---
 
-**Priyanka Jaiswal**
+## 🧩 Project Structure
 
-B.Tech Computer Science and Engineering student
-at KIIT, Bhubaneswar.
-
-Expected Graduation: 2027  
-CGPA: 7.56
-
-### Skills
-
-- C
-- Java
-- HTML
-- CSS
-- JavaScript
-- SQL
-- Data Structures & Algorithms
-
-## Future Improvements
-
-- SQL database
-- Backend API
-- User authentication
-- Cloud deployment
-- Advanced analytics
+```text
+smart-expense-manager/
+│
+├── index.html
+├── style.css
+├── script.js
+├── profile.png
+└── README.md
